@@ -14,8 +14,8 @@ import ex.boot.config.ApplicationContext;
 @EnableWebMvc
 @EnableWebMvcSecurity
 @Configuration
-@EnableAutoConfiguration
 @ComponentScan
+@EnableAutoConfiguration
 public class Launcher extends SpringBootServletInitializer
 {
 	@Override

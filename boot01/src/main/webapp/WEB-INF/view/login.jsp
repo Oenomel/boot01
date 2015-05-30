@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <c:url value="/login" var="loginUrl"/>
-<form action="${loginUrl}" method="post">
+<form action="<c:url value='/j_spring_security_check' />" method="post">
 	<c:if test="${param.error != null}">
 		<p>
 			Invalid username and password.
